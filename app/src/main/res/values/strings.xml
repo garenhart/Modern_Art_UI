@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Modern Art UI</string>
+    <string name="action_settings">More Information</string>
+
+    <color name="start1">#ffaa0000</color>
+    <color name="end1">#ffffff32</color>
+
+    <color name="start2">#ff808080</color>
+    <color name="end2">#ff808080</color>
+
+    <color name="start3">#ffffff32</color>
+    <color name="end3">#ff0000ff</color>
+
+    <color name="start4">#ffffffff</color>
+    <color name="end4">#ffffffff</color>
+
+    <color name="start5">#ff0000ff</color>
+    <color name="end5">#ffaa0000</color>
+
+</resources>
