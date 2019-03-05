@@ -8,7 +8,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
 import android.net.Uri;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
@@ -19,7 +19,7 @@ import android.widget.SeekBar;
 import java.util.Random;
 
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends AppCompatActivity {
 
     static private final String URL = "http://www.moma.org";
     private DialogFragment mDialog;
@@ -29,7 +29,7 @@ public class MainActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        SeekBar seekBar = (SeekBar) findViewById(R.id.seek_bar_color);
+        SeekBar seekBar = findViewById(R.id.seek_bar_color);
         seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
 
             Random rnd = new Random();
@@ -61,7 +61,7 @@ public class MainActivity extends ActionBarActivity {
 
     private void UpdateColor(int imageId, int startColorId, int endColorId, ArgbEvaluator colorEvaluator, float fraction)
     {
-        ImageView image = (ImageView) findViewById(imageId);
+        ImageView image = findViewById(imageId);
         image.setBackgroundColor((Integer) colorEvaluator.evaluate(fraction,
                 getResources().getColor(startColorId),
                 getResources().getColor(endColorId)));
