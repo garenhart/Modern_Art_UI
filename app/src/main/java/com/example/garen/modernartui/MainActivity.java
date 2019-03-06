@@ -127,7 +127,7 @@ public class MainActivity extends AppCompatActivity {
                                 }
                             })
 
-                    .setPositiveButton("Visit MOMA",
+                    .setPositiveButton("Visit MOMA Website",
                             new DialogInterface.OnClickListener() {
                                 public void onClick(
                                         final DialogInterface dialog, int id) {
